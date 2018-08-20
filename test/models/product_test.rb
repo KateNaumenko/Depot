@@ -44,7 +44,7 @@ class ProductTest < ActiveSupport::TestCase
     bad = %w{fred.doc fred.gif/more fred.gif.more}
 
     ok.each do |name|
-      assert new_product(name).valid?, "#{name} shouldn't be invalid"
+      assert new_product(name).valid? , "#{name} shouldn't be invalid"
         # не должно быть неприемлемым
     end
 
